@@ -62,7 +62,10 @@ spec:
         - name: database_uri
           value: "sqlite:///test.db"
         - name: args
-          value: ["-v", "--with-spec", "--spec-color"]  # Split args into a list
+          value: 
+            - "-v"
+            - "--with-spec"
+            - "--spec-color"
       runAfter:
         - clone
 
